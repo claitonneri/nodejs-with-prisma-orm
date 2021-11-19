@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/claitonneri/nodejs-with-prisma-orm.git",
   "author": "Claiton Neri <claitondidone@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
