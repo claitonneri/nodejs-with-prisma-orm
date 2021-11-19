@@ -1,0 +1,8 @@
+{
+  "name": "nodejs-with-prisma-orm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/claitonneri/nodejs-with-prisma-orm.git",
+  "author": "Claiton Neri <claitondidone@gmail.com>",
+  "license": "MIT"
+}
