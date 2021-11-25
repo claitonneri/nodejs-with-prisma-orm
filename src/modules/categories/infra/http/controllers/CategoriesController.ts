@@ -9,7 +9,9 @@ class CategoriesController {
 
     const createCategory = container.resolve(CreateCategoryService);
 
-    return response.json({ message: "ok" });
+    const category = await createCategory.execute({name, description});
+
+    return response.status(201).json(category);
   }
 }
 
