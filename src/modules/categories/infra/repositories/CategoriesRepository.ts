@@ -7,6 +7,18 @@ const prisma = new PrismaClient()
 
 class CategoriesRepository implements ICategoriesRepository {
 
+  async find(): Promise<Category[]> {
+    const categories = await prisma.category.findMany();
+
+    return categories;
+  }
+
+  async findByName(name: string): Promise<Category | null> {
+    const category = await prisma.category.findUnique({ where: { name } });
+
+    return category;
+  }
+
   async create({ name, description }: ICreateCategoryDTO): Promise<Category>{
     const category = await prisma.category.create({
       data: {
